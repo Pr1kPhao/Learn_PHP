@@ -7,7 +7,7 @@
 <body>
     <?php
  $cars = array("BMW", "Honda", "Lambo", "Benz");
-echo "My Favorite car " . $cars[0] . " , " $cars[1];
+echo "My Favorite car " . $cars[0];
 ?>
 </body>
 </html>
