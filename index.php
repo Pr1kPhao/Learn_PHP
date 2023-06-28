@@ -8,6 +8,7 @@
     <?php
  $cars = array("BMW", "Honda", "Lambo", "Benz");
 echo "My Favorite car " . $cars[0];
+echo count($cars);
 ?>
 </body>
 </html>
