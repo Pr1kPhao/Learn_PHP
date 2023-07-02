@@ -56,7 +56,7 @@ echo "<br>";
 echo $_SERVER ['SCRIPT_NAME'];
 echo "<br>";*/
 
-if ($_SERVER ["REQYEST_METHOD"] == "POST") {
+if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     $name = $_REQUEST ['fname'];
     if (empty($name)) {
         echo "Name is empty";
