@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,22 +7,20 @@
     <title>php dog shit</title>
 </head>
 <body>
-    <?php include('header.php'); ?>
-    <section>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ratione rerum nobis optio molestias expedita sapiente tempora est nostrum, praesentium natus rem dignissimos cupiditate architecto obcaecati a officia sequi non.
-        </p>
-    </section>
+    
 
-    <?php include('footer.php'); ?>
 
     <?php
+
+    $_SESSION['name'] = "Arnon";
+    $_SESSION['car'] = "Mazda";
+
 //  1. Indexed Arrays
 //  2. Assciative Arrays
 //  3. Multidimensional Arrays
-    $cars = array("BMW" => "1m", "Ford" => "2m", "Honda" => "3m");
+    /**$cars = array("BMW" => "1m", "Ford" => "2m", "Honda" => "3m");
     
-    foreach($cars as $name => $value)
+    foreach($cars as $name => $value)*/
 
     // $cars = ["BMW"] = "1m";
     // $cars = ["Ford"] = "2m";
@@ -81,6 +81,16 @@ echo "<br>";*/
         <br>
         <input type="submit">
     </form>*/
+
+    /**<?php include('header.php'); ?>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ratione rerum nobis optio molestias expedita sapiente tempora est nostrum, praesentium natus rem dignissimos cupiditate architecto obcaecati a officia sequi non.
+        </p>
+    </section>
+
+    <?php include('footer.php'); ?>*/
+
 
 ?>
 </body>
