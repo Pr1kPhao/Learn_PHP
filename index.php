@@ -5,11 +5,15 @@
     <title>php dog shit</title>
 </head>
 <body>
+    <?php include('header.php'); ?>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ratione rerum nobis optio molestias expedita sapiente tempora est nostrum, praesentium natus rem dignissimos cupiditate architecto obcaecati a officia sequi non.
+        </p>
+    </section>
 
-    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
-    Name : <input type="text" name="fname">
-    <input type="submit">
-</form>
+    <?php include('footer.php'); ?>
+
     <?php
 //  1. Indexed Arrays
 //  2. Assciative Arrays
@@ -56,14 +60,27 @@ echo "<br>";
 echo $_SERVER ['SCRIPT_NAME'];
 echo "<br>";*/
 
-if ($_SERVER ["REQUEST_METHOD"] == "POST") {
+/**if ($_SERVER ["REQUEST_METHOD"] == "POST") {
     $name = $_REQUEST ['fname'];
     if (empty($name)) {
         echo "Name is empty";
     } else {
         echo $name;
     }
-}
+}*/
+
+/**<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+    Name : <input type="text" name="fname">
+    <input type="submit">
+</form>*/
+
+/**<form action="test_post.php" method="post">
+        Name : <input type="text" name="name">
+        <br>
+        Email : <input type="text" name="email">
+        <br>
+        <input type="submit">
+    </form>*/
 
 ?>
 </body>
